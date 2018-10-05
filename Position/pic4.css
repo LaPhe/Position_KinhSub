@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.slideshow{
+	margin: 0 auto;
+	width: 1000px;
+	height: 450px;
+	background: #1E90FF;
+	/* vị trí cha */
+	position: relative;
+	margin-top: 50px;
+	background-image: url('https://tympanus.net/Tutorials/FourBoxes/img/1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:top -70px center;
+}
+.slideshow .content{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(239, 98, 16,0.2);
+}
+.slideshow .content h3{
+	display: block;
+	width: 35%;
+	height: 50px;
+	line-height: 50px;
+	/* background: green; */
+	color: white;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 38px;
+	position: absolute;
+	top: 11%;
+	left: 32.5%;
+	font-weight: normal;
+}
+.slideshow .content p{
+	display: block;
+	width: 35%;
+	height: auto;
+	/* background: blue; */
+	color: #DCDCDC;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	position: absolute;
+	top: 27%;
+	left: 32.5%;
+}
+.slideshow .content p strong{
+	color: white;
+}
+.slideshow .content a{
+	display: block;
+	width: 14%;
+	height: 30px;
+	line-height: 30px;
+	/* background: pink; */
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: white;
+	border: 2px solid white;
+}
+.slideshow .content a:hover{
+	color: #FA8072;
+	border-color: #FA8072;
+}
+.slideshow .content .a1{
+	position: absolute;
+	bottom: 45%;
+	left: 35%;
+}
+.slideshow .content .a2{
+	position: absolute;
+	bottom: 45%;
+	right: 35%;
+}
+.slideshow .content .a3{
+	position: absolute;
+	bottom: 35%;
+	right: 42.5%;
+}
+.slideshow ul{
+	list-style-type: none;
+}
+.slideshow ul li{
+	display: block;
+	width: 80px;
+	height: 80px;
+	/* background: green; */
+	/* vi trí con */
+	position: absolute;
+}
+.slideshow ul li a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	text-indent: -9999px;
+	margin-top: 5px;
+}
+.slideshow li.next{
+	bottom: 45%;
+	right: 0.5%;
+	background-image: url('../icons/back_white.png');
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: right 5px top 5px;
+	transform: rotate(180deg);
+}
+.slideshow li.prev{
+	bottom: 45%;
+	left: 0.5%;
+	background-image: url('../icons/back_white.png');
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: right 5px top 5px;
+}

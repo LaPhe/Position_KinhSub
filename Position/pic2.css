@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.slideshow{
+	margin: 0 auto;
+	width: 800px;
+	height: 450px;
+	background: #1E90FF;
+	/* vị trí cha */
+	position: relative;
+	margin-top: 50px;
+}
+.slideshow .content{
+	display: inline-block;
+	width: 85%;
+	height: 96%;
+	background: white;
+	margin-left: 7.5%;
+	margin-top: 1%;
+	border-radius: 5px;
+}
+.slideshow .content img{
+	width: 98%;
+	height: 97%;
+	margin-left: 1%;
+	margin-top: 1%;
+}
+.slideshow .content .noidung{
+	position: absolute;
+	display: block;
+	width: 83.2%;
+	height: 50px;
+	background-color:rgba(0,0,0,0.6);
+	bottom: 17px;
+	left: 8.4%;
+}
+.slideshow .content .noidung p{
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	color: white;
+}
+.slideshow ul{
+	list-style-type: none;
+}
+.slideshow ul li{
+	display: block;
+	width: 40px;
+	height: 40px;
+	/* background: green; */
+	/* vi trí con */
+	position: absolute;
+}
+.slideshow ul li a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	text-indent: -9999px;
+	margin-top: 5px;
+}
+.slideshow li.next{
+	bottom: 40%;
+	right: 1%;
+	background-image: url('../icons/left-arrow-white.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: right 5px top 5px;
+	transform: rotate(180deg);
+}
+.slideshow li.prev{
+	bottom: 40%;
+	left: 1%;
+	background-image: url('../icons/left-arrow-white.png');
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: right 5px top 5px;
+}
